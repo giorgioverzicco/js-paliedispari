@@ -6,4 +6,5 @@ function isPalindrome(word) {
   return word === reversedWord;
 }
 
-console.log(isPalindrome("anna"));
+const word = prompt("Inserisci una parola:");
+alert(isPalindrome(word) ? `${word} è una parola palindroma!` : `${word} non è una parola palindroma...`);
