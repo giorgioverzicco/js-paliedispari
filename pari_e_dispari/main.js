@@ -3,7 +3,7 @@
 =============================== */
 
 function getRandomNumber(min, max) {
-  return Math.floor(Math.random() * max) + min;
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function isEven(n) {
@@ -20,8 +20,7 @@ function hasUserChoosenEven(userChoice) {
 
 let userChoice;
 do {
-  userChoice = prompt("Pari o Dispari?");
-  userChoice = userChoice.toLowerCase();
+  userChoice = prompt("Pari o Dispari?").toLowerCase();
 } while (userChoice !== "pari" && userChoice !== "dispari");
 
 let userNumber;
