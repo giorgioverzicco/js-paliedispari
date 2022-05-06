@@ -19,10 +19,10 @@ function hasUserChoosenEven(userChoice) {
 =============================== */
 
 let userChoice;
-while (true) {
-  if (userChoice && (userChoice.toLowerCase() === "pari" || userChoice.toLowerCase() === "dispari")) break;
+do {
   userChoice = prompt("Pari o Dispari?");
-}
+  userChoice = userChoice.toLowerCase();
+} while (userChoice.toLowerCase() !== "pari" && userChoice.toLowerCase() !== "dispari");
 
 let userNumber;
 do {
