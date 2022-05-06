@@ -7,7 +7,7 @@ function getRandomNumber(min, max) {
 }
 
 function isEven(n) {
-  return n % 2 === 0 ? true : false;
+  return n % 2 === 0;
 }
 
 function hasUserChoosenEven(userChoice) {
@@ -22,7 +22,7 @@ let userChoice;
 do {
   userChoice = prompt("Pari o Dispari?");
   userChoice = userChoice.toLowerCase();
-} while (userChoice.toLowerCase() !== "pari" && userChoice.toLowerCase() !== "dispari");
+} while (userChoice !== "pari" && userChoice !== "dispari");
 
 let userNumber;
 do {
